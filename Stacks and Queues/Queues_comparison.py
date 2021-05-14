@@ -4,14 +4,18 @@ from datetime import datetime
 
 def deque_queue_test():
     q = deque()
-    for el in range(1 << 27):
+    for el in range(1 << 19): # 2^27
         q.append(el)
+    while q:
+        x = q.popleft()
 
 
 def list_queue_test():
     q = []
-    for el in range(1 << 27):
+    for el in range(1 << 19):
         q.append(el)
+    while q:
+        z = q.pop(0)
 
 
 def measure(action):
