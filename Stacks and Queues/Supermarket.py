@@ -10,4 +10,4 @@ while not name == "End":
         names.append(name)
     name = input()
 
-print(f"{len(names)} remaining.")
+print(f"{len(names)} people remaining.")
