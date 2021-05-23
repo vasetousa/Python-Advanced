@@ -34,3 +34,9 @@ for el in range(pumps):
     else:
         valid = True
 
+# 5
+# 5 5
+# 10 9
+# 1 4
+# 6 2
+# 8 3
