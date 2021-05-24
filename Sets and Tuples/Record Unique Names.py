@@ -11,8 +11,6 @@ def print_results(data):
 n = int(input())
 names = input_data_in_list(n)
 
-
-
 # names = [
 # 'Lee',
 # 'Joey',
