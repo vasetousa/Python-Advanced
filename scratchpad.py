@@ -1,8 +1,5 @@
-
-Mercedes
-Hummer
-green
-Hummer
-Mercedes
-green
-END
+4
+Pesho
+Stefan
+Stamat
+Gosho
