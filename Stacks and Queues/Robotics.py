@@ -1,5 +1,4 @@
 from collections import deque
-
 from datetime import datetime, timedelta
 
 data = input().split(';')
@@ -10,10 +9,7 @@ available_robots = deque([])
 for _ in data:
     name, time = _.split('-')
     time = int(time)
-    robot = {}
-    robot['name'] = name
-    robot['processing_time'] = time
-    robot['available_at'] = time_now
+    robot = {'name': name, 'processing_time': time, 'available_at': time_now}
     robots.append(robot)
     available_robots.append(robot)
 
@@ -25,14 +21,24 @@ while not product == 'End':
     product = input()
 
 time_now = time_now + timedelta(seconds=1)
-while product:
+while q:
     current_product = q.popleft()
     if available_robots:
         current_robot = available_robots.popleft()
         current_robot['available_at'] = time_now + timedelta(seconds=current_robot['processing_time'])
+        robot = [el for el in robots if el == current_robot][0]
+        robot['available_at'] = time_now + timedelta(seconds=current_robot['processing_time'])
+        print(f"{robot['name']} - {current_product} [{time_now.strftime('%H:%M:%S')}]")
     else:
         for r in robots:
             if time_now >= r['available_at']:
                 available_robots.append(r)
-
-print()
+        if not available_robots:
+            q.append(current_product)
+        else:
+            current_robot = available_robots.popleft()
+            current_robot['available_at'] = time_now + timedelta(seconds=current_robot['processing_time'])
+            robot = [el for el in robots if el == current_robot][0]
+            robot['available_at'] = time_now + timedelta(seconds=current_robot['processing_time'])
+            print(f"{robot['name']} - {current_product} [{time_now.strftime('%H:%M:%S')}]")
+    time_now = time_now + timedelta(seconds=1)
