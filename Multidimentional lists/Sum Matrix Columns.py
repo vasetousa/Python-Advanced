@@ -19,6 +19,7 @@ def sum_columns_matrix(result):
     return sums
 
 
+
 def print_results(values):
     [print(x) for x in values]
 
