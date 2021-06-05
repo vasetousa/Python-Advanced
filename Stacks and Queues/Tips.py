@@ -5,3 +5,7 @@
 #     avg = sum(value)/len(value)
 #     grades = ' '.join(map(lambda grade: f'{grade:.2f}', value))
 #     print(f"{key} -> {grades} (avg: {avg:.2f})")
+
+# PPRINT
+# from pprint import pprint
+# pprint(matrix) prints the matrix properly

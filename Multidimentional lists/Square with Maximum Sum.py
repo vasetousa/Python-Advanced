@@ -48,6 +48,6 @@ def print_result(coordinates, size):
 
 
 matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)
-SUBMATRIX_SIZE = 2
+SUBMATRIX_SIZE = 3
 coordinates = get_best_submatrix_sum_coordinates(matrix, SUBMATRIX_SIZE)
 print_result(coordinates, SUBMATRIX_SIZE)
