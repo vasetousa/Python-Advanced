@@ -24,7 +24,7 @@ def find_submatrix(matrix, current_row, current_col):
         return True
     return False
 
-from pprint import pprint
+
 counter = 0
 size = 2
 matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)

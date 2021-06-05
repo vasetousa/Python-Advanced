@@ -44,7 +44,7 @@ def print_result(coordinates, size):
         for c in range(col_index, col_index + size):
             row.append(matrix[r][c])
         print(" ".join(str(x) for x in row))
-    print(find_submatrix(matrix, row_index, col_index, size))
+    print(find_submatrix(matrix, row_index, col_index, size))   # prints the sum of the sumbatrix
 
 
 matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)
