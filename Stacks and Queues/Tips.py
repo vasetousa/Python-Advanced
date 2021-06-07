@@ -9,3 +9,6 @@
 # PPRINT
 # from pprint import pprint
 # pprint(matrix) prints the matrix properly
+
+
+print(" ".join(str(x) for x in row))   # reverse the ints to strings to be able to .join()

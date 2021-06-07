@@ -43,8 +43,8 @@ def print_result(coordinates, size):
         row = []
         for c in range(col_index, col_index + size):
             row.append(matrix[r][c])
-        print(" ".join(str(x) for x in row))
-    print(find_submatrix(matrix, row_index, col_index, size))   # prints the sum of the sumbatrix
+        print(" ".join(str(x) for x in row))   # reverse the ints to strings to be able to .join()
+    print(find_submatrix(matrix, row_index, col_index, size))   # prints the sum of the submatrix
 
 
 matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)
