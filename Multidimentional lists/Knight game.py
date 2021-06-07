@@ -18,3 +18,5 @@ def read_matrix(is_test=False):
 from pprint import pprint
 matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)
 pprint(matrix)
+
+# TODO finish the problem.
