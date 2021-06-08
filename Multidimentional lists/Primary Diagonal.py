@@ -39,9 +39,8 @@ def calculate_primary_diagonal_sum(matrix):
 
 
 def calculate_secondary_diagonal_sum(matrix):
-    secondary_diagonal_sum = 0
     n = len(matrix)
-
+    secondary_diagonal_sum = 0
     for i in range(n):
         secondary_diagonal_sum += matrix[i][- i - 1]
     return secondary_diagonal_sum
