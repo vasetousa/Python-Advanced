@@ -32,8 +32,8 @@ matrix = [
 
 def calculate_primary_diagonal_sum(matrix):
     primary_diagonal_sum = 0
-
-    for i in range(len(matrix)):
+    n = len(matrix)
+    for i in range(n):
         primary_diagonal_sum += matrix[i][i]
     return primary_diagonal_sum
 

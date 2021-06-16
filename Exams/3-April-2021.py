@@ -1,5 +1,4 @@
 def flights(*args):
-    counter = 1
     flight_data = {}
     for el in range(0, len(args)-1, 2):
         if args[el] == "Finish":
@@ -7,9 +6,7 @@ def flights(*args):
         if args[el] not in flight_data:
             flight_data[args[el]] = args[el+1]
         else:
-
             flight_data[args[el]] += args[el+1]
-
     return flight_data
 
 
