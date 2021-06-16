@@ -50,6 +50,7 @@ def read_matrix(is_test=False):
             matrix.append(x)
         return matrix
 
+
 player_list = input().split(', ')
 matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)
 """ D - sum(corresponding 4 numbers) * 2, T - sum(corresponding 4 numbers) * 3, B i wins the game """
@@ -82,20 +83,11 @@ while True:
     if current_hit == 'B':
         """Game over"""
         break
-    elif current_hit == 'D':
-        current_result = get_current_result_from_four_numbers(matrix, current_hit)
-        result = current_total_score - current_result   # player score minus 4 sum(4 numbers)
-        if result <= 0:     # result dropped under 0, current player wins
-            break
-    elif current_hit == 'T':
-        current_result = get_current_result_from_four_numbers(matrix, current_hit)
-        result = current_total_score - current_result  # player score minus 4 sum(4 numbers)
-        if result <= 0:     # result dropped under 0, current player wins
-            break
-    else:
-        current_result = get_current_result_from_four_numbers(matrix, current_hit)
-        result = current_total_score - current_result  # player score minus the number in current cell
 
+    current_result = get_current_result_from_four_numbers(matrix, current_hit)
+    result = current_total_score - current_result  # player score minus the number in current cell
+    if result <= 0:  # result dropped under 0, current player wins
+        break
     players.append(current_player)  # adding player back to the end of the queue
     players_score.append(result)   # adding player score back to the end of the queue
     throw_counter.append(current_throw_counter)
