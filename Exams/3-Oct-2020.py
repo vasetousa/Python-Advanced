@@ -4,7 +4,7 @@ def best_list_pureness(*numbers):
     counter = 0
     for _ in range(k):
         for el in l:
-            x = (el*counter) +
+            x = (el*counter)
             pass
 
 
@@ -15,4 +15,5 @@ result = best_list_pureness(*test)
 print(result)
 
 
+# TODO not finished
 
