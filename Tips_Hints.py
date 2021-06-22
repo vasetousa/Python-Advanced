@@ -55,7 +55,7 @@
 # list_happiness = list(map(lambda el: int(el), input().split()))  # direct list of integers with map and lambda
 # list_happiness = list(int, input().split()))  # direct list of integers with reference to "int"
 
-# print(','.join(str(x) for x in list_of_ints))
+# print(', '.join(str(x) for x in list_of_ints))
 # ', '.join(map(str, myList))
 
 # The filter() method:
@@ -128,5 +128,13 @@
 # from pprint import pprint
 # pprint(matrix) prints the matrix properly
 
+# print(" ".join(str(x) for x in row))   # reverse the ints to strings to be able to .join()
 
-print(" ".join(str(x) for x in row))   # reverse the ints to strings to be able to .join()
+# for el in file.readlines(): # reads the whole line
+# for el in file.readline(): # reads the symbol
+# for el in file.read(10): # reads 10 symbols
+
+# print(isinstnance("Hello", str) -> True
+
+
+# https://www.tutorialsteacher.com/python/python-list-comprehension    !!!!!!!!!!!!!

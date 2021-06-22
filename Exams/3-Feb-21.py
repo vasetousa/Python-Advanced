@@ -1,6 +1,6 @@
 def remove_all_products_required(q, ar):
     for el in ar:
-        counter = q.count(el)
+        counter = q.lett_count(el)
         for i in range(counter):
             q.remove(el)
     return q
