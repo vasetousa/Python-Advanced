@@ -1,2 +1,2 @@
-from line import print_line
-from triangle_execute import print_the_triangle
+from triangle_print.line import print_line
+from triangle_print.triangle_execute import print_the_triangle

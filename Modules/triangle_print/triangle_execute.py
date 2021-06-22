@@ -8,7 +8,7 @@
 1
 """
 
-from line import print_line
+from triangle_print.line  import print_line
 
 
 def print_the_triangle(n):

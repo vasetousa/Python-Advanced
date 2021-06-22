@@ -1,1 +1,2 @@
-from operations import math_ops
+from Mathematical_operations.operations import math_ops
+import Mathematical_operations.operations
