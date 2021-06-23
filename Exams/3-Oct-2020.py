@@ -1,12 +1,10 @@
-def best_list_pureness(*numbers):
-    l = list(numbers[0])
-    k = numbers[1]
+def best_list_pureness(numbers, k):
     pureness = []
     current_suma = 0
 
     """ first sum is with the current list"""
     if k == 0:
-        for i in enumerate(l):
+        for i in enumerate(numbers):
             multiplication = i[0] * i[1]
             current_suma += multiplication
         return f"Best pureness {current_suma} after {0} rotations"
@@ -14,12 +12,12 @@ def best_list_pureness(*numbers):
     for _ in range(k+1):
         current_suma = 0
         """ summing the (numbers * indices) """
-        for i in enumerate(l):
+        for i in enumerate(numbers):
             multiplication = i[0] * i[1]
             current_suma += multiplication
 
-        current_number = l.pop()
-        l.insert(0, current_number)
+        current_number = numbers.pop()
+        numbers.insert(0, current_number)
         pureness.append(current_suma)
 
     """ find the highest number and its index (or number of rotations) """
