@@ -64,7 +64,7 @@ def read_matrix(is_test=False):
         return matrix
 
 
-matrix = read_matrix(is_test=True)  # for local testing use matrix = read_matrix(is_test=True)
+matrix = read_matrix()  # for local testing use matrix = read_matrix(is_test=True)
 size = 8
 king_position = find_king(matrix)
 queens = check_directions(matrix, king_position, size)
