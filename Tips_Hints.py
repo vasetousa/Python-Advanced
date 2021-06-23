@@ -138,3 +138,32 @@
 
 
 # https://www.tutorialsteacher.com/python/python-list-comprehension    !!!!!!!!!!!!!
+
+
+# # Python3 code to demonstrate
+# # rotation of list
+# # using rotate()
+# # from collections import deque
+#
+# # initializing list
+# test_list = [1, 4, 6, 7, 2]
+#
+# # printing original list
+# print ("Original list : " + str(test_list))
+#
+# # using rotate() to left rotate by 4
+# test_list = deque(test_list)
+# test_list.rotate(-4)
+# test_list = list(test_list)
+#
+# # Printing list after left rotate
+# print ("Left rotate by 4 - >> the last becomes first : " + str(test_list))
+#
+# # using rotate() to right rotate by 4
+# # back to Original
+# test_list = deque(test_list)
+# test_list.rotate(4)
+# test_list = list(test_list)
+#
+# # Printing after right rotate
+# print ("Right rotate by 4 - >> the first becomes last(back to original), similar to list.popleft() : " + str(test_list))
