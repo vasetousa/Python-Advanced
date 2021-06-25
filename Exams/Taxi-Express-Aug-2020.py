@@ -3,7 +3,6 @@ from collections import deque
 customers = deque([int(el) for el in input().split(", ")])  # time it takes to drive the customer to his/her destination
 taxi_vehicles = deque([int(el) for el in input().split(", ")])  # time they can drive, before they need to refill their tanks
 total_time = 0      # values of all customers
-no_customer = False
 no_taxi = False
 
 """ put the first customer in the last taxi until there are no customers left """
