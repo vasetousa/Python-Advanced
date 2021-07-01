@@ -5,7 +5,6 @@ while not data == "End":
     if data.startswith("Create"):
         command, file_name = data.split("-")
         new_file = open(file_name, "w")
-        print(new_file)
         new_file.close()
     elif data.startswith("Add"):
         command, file_name, content = data.split("-")

@@ -1,4 +1,4 @@
-with open('text') as file:
+with open('text.txt') as file:
     data = file.readlines()
 string = ",.!?-'"
 lett_count = 0
@@ -12,8 +12,8 @@ with open("output", 'w') as output:
             elif 65 <= ord(el) <= 90 or 97 <= ord(el) <= 122:
                 lett_count += 1
 
-        print(f'Line {idx}:, {row.strip()} ({lett_count})({punct_count})')
-        print(f'Line {idx}:, {row.strip()} ({lett_count})({punct_count})', file=output)
+        print(f'Line {idx+1}: {row.strip()} ({lett_count})({punct_count})')
+        print(f'Line {idx+1}: {row.strip()} ({lett_count})({punct_count})', file=output)
 
         punct_count = 0
         lett_count = 0
