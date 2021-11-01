@@ -1,7 +1,7 @@
 import os
 desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 
-_, _, files = next(os.walk(input()))    # reads the files in the current directory -> "."
+files = next(os.walk(input()))    # reads the files in the current directory -> "."
 by_extentions = {}
 for file in files:
     ext = file.split(".")[-1]

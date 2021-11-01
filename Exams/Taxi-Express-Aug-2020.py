@@ -26,3 +26,4 @@ if customers:
 else:
     print("All customers were driven to their destinations")
     print(f"Total time: {total_time} minutes")
+

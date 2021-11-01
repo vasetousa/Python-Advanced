@@ -70,7 +70,7 @@ while True:
     snake_direction = input()
     next_row, next_col = directions(snake_direction)
     snake_next_move_r,  snake_next_move_c = current_r + next_row, current_c + next_col   # next spot to move "S"
-    # matrix[current_r][current_c] = EMPTY    # starting point for "S"  1
+
     if not is_move_valid(snake_next_move_r, snake_next_move_c, side):
         matrix[current_r][current_c] = EMPTY
         print("Game over!")
@@ -108,3 +108,8 @@ for el in matrix:
         if count == side:
             print()
         count += 1
+
+
+0 1 30
+15 9 5 0
+/ + + * -
